@@ -6,6 +6,11 @@ class PlayerService {
         let createdPlayer = new player(newName, newPoints, newFun, newSnacks)
         AppState.players.push(createdPlayer)
     }
+
+    gainPoints(playerName) {
+        let selectedPlayer = AppState.players.find(player => player.name == playerName)
+        console.log('selected to gain points', playerName, selectedPlayer)
+    }
 }
 
 export const playerService = new PlayerService()

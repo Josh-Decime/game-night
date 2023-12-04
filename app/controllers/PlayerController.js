@@ -27,9 +27,9 @@ export class PlayerController {
         playerService.addPlayer(newName, newPoints, newFun, newSnacks)
         this.drawPlayer()
     }
-    gainPoints(player) {
+    // gainPoints(playerName) {
 
-    }
+    // }
 
 
 
